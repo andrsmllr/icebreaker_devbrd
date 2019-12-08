@@ -1,5 +1,5 @@
 # icebreaker_devbrd
-Play and learn with the iCEBreaker development board featuring a Lattice iCE40 UP5K FPGA and a completely open-source toolchain..
+Play and learn with the iCEBreaker development board featuring a Lattice iCE40 UP5K FPGA and a completely open-source toolchain.
 
 ## Build and run the project
 Connect your icebreaker board to your machine via USB. Then open a shell in the repo root directory and run  
@@ -7,7 +7,7 @@ Connect your icebreaker board to your machine via USB. Then open a shell in the 
 > $> make  
 > $> make prog  
 
-The read LED on the iCEBreaker board should be blinking after programming completes. Pressing the user button close the USB connector should increase the blink frequency.
+The red LED on the iCEBreaker board should be blinking after programming completes. Pressing the user button close the USB connector should increase the blink frequency.
 
 ## References
 [iCEBreaker Hardware Info](https://github.com/icebreaker-fpga/icebreaker)  
