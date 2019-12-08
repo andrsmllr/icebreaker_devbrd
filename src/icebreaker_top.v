@@ -94,7 +94,7 @@ reg leda;
 
 always @ (posedge clk_10K)
 begin
-    if (cntra == 24'd0) begin
+    if (cntra == 'd0) begin
         cntra <= 10000/2;
         leda <= ~leda;
     end else begin
@@ -107,7 +107,7 @@ reg ledb;
 
 always @ (posedge clk_48M)
 begin
-    if (cntrb == 24'd0) begin
+    if (cntrb == 'd0) begin
         cntrb <= 48000000/2;
         ledb <= ~ledb;
     end else begin
@@ -115,12 +115,12 @@ begin
     end
 end
 
-reg [23:0] cntrc = 'd0;
+reg [31:0] cntrc = 'd0;
 reg ledc;
 
 always @ (posedge clk)
 begin
-    if (cntrc == 24'd0) begin
+    if (cntrc == 'd0) begin
         cntrc <= 96000000/2;
         ledc <= ~ledc;
     end else begin
